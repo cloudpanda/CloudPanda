@@ -22,3 +22,5 @@ test test by jahom
 
 
 test test for rebase
+
+test for squash
