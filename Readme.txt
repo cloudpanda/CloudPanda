@@ -24,3 +24,5 @@ rebase 2
 rebase 3
 
 merge
+
+squash
