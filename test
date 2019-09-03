@@ -28,9 +28,14 @@ test direct merge 1
 test direct merge 2
 
 
+test close #1212
+=======
+
 test close #50
 
 test close #4
 test close #5
 
 test close gh-52
+
+close #53
