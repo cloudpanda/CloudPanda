@@ -195,15 +195,6 @@ function disorder(uint amount) public {
     
 
 
-
-
-
-
-
-
-
-
-
 }
 
 
