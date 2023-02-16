@@ -25,21 +25,6 @@ contract BountyHunt {
     }   
   }
 
-  function transferBounty(address to, uint value)  public { // preventTheft {
-    if (bountyAmount[msg.sender] >= value) {
-      bountyAmount[to] += value;
-      bountyAmount[msg.sender] -= value;
-    }   
-  }
-
-  function viewBountyAmount(address beneficiary)  public view returns (uint) { // preventTheft {
-      return bountyAmount[beneficiary];
-  }
-
-  function viewTotalBountyAmount()  public view returns (uint) { // preventTheft {
-      return totalBountyAmount;
-  }
-
 //2
 address public parentAddress;
 //   function()  public payable {
@@ -186,17 +171,5 @@ function withdrawAndSend( uint wethAmt)  public  {
         // wethToken.withdraw(wethAmt);
         require(msg.sender.call.value(wethAmt)());
 }
-
-// exception disorder
-function disorder(uint amount) public {
-    //1
-    msg.sender.send(amount);
-    //2
-    
-
-
-}
-
-
 
 }
